@@ -20,7 +20,7 @@ const VALID_SORTS: Record<Entity, readonly string[]> = {
 // Fields fetched from OpenAlex per entity (reduces payload size)
 const SELECT_FIELDS: Record<Entity, string[]> = {
   works:        ["id", "display_name", "publication_year", "doi", "type", "cited_by_count", "open_access", "authorships", "primary_location"],
-  authors:      ["id", "display_name", "orcid", "works_count", "cited_by_count", "last_known_institution", "x_concepts"],
+  authors:      ["id", "display_name", "orcid", "works_count", "cited_by_count", "last_known_institutions", "topics"],
   institutions: ["id", "display_name", "ror", "country_code", "type", "works_count", "cited_by_count", "homepage_url"],
   sources:      ["id", "display_name", "issn_l", "type", "is_oa", "host_organization_name", "works_count", "cited_by_count"],
   concepts:     ["id", "display_name", "level", "description", "works_count", "cited_by_count", "wikidata"],
@@ -132,8 +132,8 @@ function normalizeResults(entity: Entity, raw: any[]): NormalizedResult[] {
         orcid:        a.orcid ?? null,
         worksCount:   a.works_count ?? 0,
         citedByCount: a.cited_by_count ?? 0,
-        institution:  a.last_known_institution?.display_name ?? null,
-        topConcepts:  (a.x_concepts ?? []).slice(0, 3).map((c: any) => c.display_name),
+        institution:  (a.last_known_institutions ?? [])[0]?.display_name ?? null,
+        topConcepts:  (a.topics ?? []).slice(0, 3).map((c: any) => c.display_name),
       }));
 
     case "institutions":

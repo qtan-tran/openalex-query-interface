@@ -73,7 +73,7 @@ export default function ResultsArea({
   // Results — dim existing rows while paginating
   return (
     <div className="space-y-3">
-      {meta && <ResultsToolbar meta={meta} entity={entity} query={query} />}
+      {meta && <ResultsToolbar meta={meta} entity={entity} query={query} results={results} />}
       <div className={loading ? "pointer-events-none opacity-50 transition-opacity duration-150" : ""}>
         <ResultsTable
           entity={entity}
