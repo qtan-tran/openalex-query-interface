@@ -23,7 +23,7 @@ export default function Header() {
             API docs
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/your-username/openalex-query-interface"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-gray-500 hover:text-gray-800 transition-colors"
