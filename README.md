@@ -1,6 +1,6 @@
 # OpenAlex Explorer
 
-A clean, open-source web interface for querying the [OpenAlex](https://openalex.org/) research catalog — search millions of academic works, authors, institutions, journals, and concepts.
+A clean, open-source web interface for querying the [OpenAlex](https://openalex.org/) research catalog. It helps search millions of academic works, authors, institutions, journals, and concepts.
 
 **No sign-up. No API key required.** OpenAlex is free and fully open.
 
