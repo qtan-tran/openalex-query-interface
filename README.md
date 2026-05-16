@@ -12,7 +12,7 @@ A clean, open-source web interface for querying the [OpenAlex](https://openalex.
 - **Rich filters** — year range, open access status, minimum citations, sort order, results per page
 - **Cursor pagination** — fast navigation through large result sets
 - **CSV export** — download the current page of results with one click
-- **Shareable URLs** — search state is preserved in the URL; refresh or share any query
+- **Shareable URLs** — search state is preserved in the URLs; refresh or share any query
 - **Typed throughout** — full TypeScript from API route to UI components
 
 ---
