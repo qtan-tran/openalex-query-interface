@@ -43,7 +43,7 @@ npm install
 cp .env.example .env.local
 ```
 
-All variables are optional — skip this step if you just want to try the app.
+All variables are optional — skip this step if you simply want to try the app.
 
 ### 4 — Start the development server
 
