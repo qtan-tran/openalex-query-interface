@@ -51,7 +51,7 @@ All variables are optional — skip this step if you simply want to try the app.
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in the browser.
 
 ---
 
