@@ -135,7 +135,7 @@ The app proxies all requests through a single internal route to keep your API ke
 - **Concepts entity** — OpenAlex has deprecated Concepts in favour of Topics. The tab is included but results may be sparse.
 - **Export scope** — CSV export covers merely the current page of results, not all pages.
 - **Cursor pagination** — jumping to a specific page is not supported; the OpenAlex API only provides a next-cursor token.
-- **Author affiliation** — the `institution` field reflects the most recent known affiliation, which may be out of date.
+- **Author affiliation** — the `institution` field reflects the most recent known affiliation, which could be out of date.
 
 ---
 
