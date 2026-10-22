@@ -85,7 +85,7 @@ See `.env.example` for the full template with comments.
 app/
   api/openalex/route.ts    Server-side proxy to the OpenAlex API
   layout.tsx               Root HTML layout and metadata
-  page.tsx                 Entry point — mounts the search page inside Suspense
+  page.tsx                 Entry point -- mounts the search page inside Suspense
 
 components/
   layout/
